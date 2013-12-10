@@ -12,5 +12,6 @@ public class HarPluginConst {
 	public static final String SAVE_RESULT_AS_FILE = "sonar.har.saveAnalysisDataAsFile";
 	public static final String PROEJCT_BASE_DIR = "sonar.projectBaseDir";
 	public static final String PROEJCT_FILE_SEPARATOR = "file.separator";
+	public static final String PROEJCT_VERSION = "sonar.projectVersion";
 
 }

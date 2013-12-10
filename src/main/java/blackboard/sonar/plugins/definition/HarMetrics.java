@@ -52,7 +52,7 @@ public final class HarMetrics implements Metrics {
 			.setDirection(Metric.DIRECTION_WORST).setQualitative(true)
 			.setDomain(HAR_DOMAIN).create();
 	public static final Metric AVG_HTTP400 = new Metric.Builder(
-			"learn.har.http400AvgCt", "Avg Http400", Metric.ValueType.INT)
+			"learn.har.http400AvgCt", "Avg Http400", Metric.ValueType.FLOAT)
 			.setDescription("This is a metric to store the min response time")
 			.setDirection(Metric.DIRECTION_WORST).setQualitative(true)
 			.setDomain(HAR_DOMAIN).create();
@@ -62,7 +62,7 @@ public final class HarMetrics implements Metrics {
 			.setDirection(Metric.DIRECTION_WORST).setQualitative(true)
 			.setDomain(HAR_DOMAIN).create();
 	public static final Metric AVG_HTTP500 = new Metric.Builder(
-			"learn.har.http500AvgCt", "Avg Http500", Metric.ValueType.INT)
+			"learn.har.http500AvgCt", "Avg Http500", Metric.ValueType.FLOAT)
 			.setDescription("This is a metric to store the Avg Http500")
 			.setDirection(Metric.DIRECTION_WORST).setQualitative(true)
 			.setDomain(HAR_DOMAIN).create();

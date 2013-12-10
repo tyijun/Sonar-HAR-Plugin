@@ -19,7 +19,7 @@ import org.sonar.api.resources.Project;
 
 import blackboard.sonar.plugins.definition.Har;
 import blackboard.sonar.plugins.har.importer.HarDataImporter;
-import blackboard.sonar.plugins.har.importer.HarDefaultDataImporter;
+import blackboard.sonar.plugins.har.importer.HarSimpleDataImporter;
 
 public class HarSensor implements Sensor {
 
@@ -41,7 +41,7 @@ public class HarSensor implements Sensor {
 
 	public void analyse(Project project, SensorContext sensorContext) {
 		try {
-			HarDataImporter importer = HarDefaultDataImporter.getInstance(
+			HarDataImporter importer = HarSimpleDataImporter.getInstance(
 					settings, project, sensorContext);
 			importer.importData();
 		} catch (Exception e) {
